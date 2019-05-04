@@ -1,0 +1,77 @@
+.aboutUs {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: $primary-font;
+}
+
+.aboutUs__img {
+  position: absolute;
+  background-image: url('../images/whatWeDo.jpg');
+  height: 30vw; //vw-wazne!!
+  background-size: cover;
+  width: 69%;
+  overflow: hidden;
+  filter: opacity(0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUs__img {
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+.aboutUs__title {
+  font-family: $primary-font;
+  font-weight: lighter;
+  font-size: 8rem;
+  padding-top: 137px;
+}
+
+@media only screen and (max-width: 970px) {
+  .aboutUs__title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUs__title {
+    padding-top: 40vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutUs__title {
+    font-size: 3rem;
+  }
+}
+
+.aboutUs__name {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.aboutUs__desc {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.aboutUs__desc--footer {
+  color: $primary-color;
+  padding-bottom: 0;
+}
+
+.teamMembe__img {
+  background-image: url('../images/whatWeDo.jpg');
+  height: 20vw; //vw-wazne!!
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  filter: opacity(0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .teamMembe__img {
+    height: 70vw;
+  }
+}

@@ -1,0 +1,199 @@
+@media only screen and (min-width: 750px) {
+  .projects {
+    background: linear-gradient(to right, white 50%,$projectsBGcolor 50%);
+      @include projectsHeight();
+  }
+}
+
+.projects {
+  @include projectsPosition();
+  z-index: 2;
+}
+
+
+.carousel-indicators {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .carousel-indicators {
+    display: inline-block;
+  }
+}
+
+
+
+.projects__show {
+  background-color: $projectsBGcolor;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: $primary-font;
+  font-size: 14px;
+
+}
+
+@media only screen and (min-width: 750px) {
+  .projects__show {
+    @include projectsHeight();
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .projects__show {
+    font-size: 15px;
+  }
+}
+
+.projects__show--rightSide {
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .projects__show--rightSide {
+    width: 40%;
+  }
+}
+
+.projects__show--leftSide {
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) {
+  .projects__show--leftSide {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .projects__show--leftSide {
+    width: 60%;
+  }
+}
+
+.projects__img {
+  width: 80%;
+}
+
+.projects__website {
+  position: absolute;
+  height: 59%;
+  width: 60%;
+  top: 19%;
+  left: 20%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+
+.projects__title {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@media only screen and (min-width: 970px) {
+  .projects__title {
+    font-size: 40px;
+  }
+}
+
+.projects__table {
+  & th {
+    text-align: left;
+    padding: 5px 20px;
+    vertical-align: top;
+  }
+  & td {
+    text-align: left;
+    padding: 5px 20px;
+    vertical-align: top;
+  }
+}
+
+.img-responsive, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 80vh;
+}
+
+@media only screen and (min-width: 750px) {
+  .img-responsive, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    @include projectsHeight();
+  }
+}
+
+
+.carousel-inner {
+  background-color: black;
+
+}
+
+.arrow {
+  align-self: flex-start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .arrow {
+    position: relative;
+    top: 165px;
+  }
+}
+
+
+.arrow img {
+  height: 50px;
+  max-width: 40px;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.spaceBetween {
+  height: 10px;
+  width: 100vw;
+  background-color: white;
+}
+
+@media only screen and (min-width: 750px) {
+  .spaceBetween {
+    display: none;
+  }
+}
+
+.projects__details {
+  background-color: black;
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+.projects__details > * {
+  margin: 30px 50px;
+}
+
+.projects__webPrtSc img,
+.projects__webPrtSc--additional img {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+// .endOfItem {
+//   height: 80px;
+//   width: 100vw;
+//   background-color: white;
+//   z-index: 5;
+// }

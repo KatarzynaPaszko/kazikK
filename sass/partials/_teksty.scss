@@ -1,0 +1,10 @@
+.post__cnt {
+  max-width: 100%;
+  & img {
+    max-width: 100%;
+    padding: 40px 0;
+  }
+  & p {
+    padding: 10px 0;
+  }
+}
